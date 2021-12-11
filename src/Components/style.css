@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background-color: #faf7f2;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: space-around;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card-container {
+  margin: 25px auto 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* flex-direction: column;
+  justify-content: center; */
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+  z-index: 1;
+}
+
+.card-body {
+  display: inline-block;
+  justify-content: space-evenly;
+}
+.card-number {
+  margin-top: 15px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 22px;
+  font-size: 12px;
+  height: 25px;
+  text-align: center;
+  width: 25px;
+  color: #aaa;
+}
+
+.category {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin: 15px 0 0;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 60px;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.about {
+  font-weight: 300;
+  line-height: 22px;
+  margin: 10px 0;
+  color: #aaa;
+  display: block;
+}
+
+.photo {
+  width: 300px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Styling the Heading*/
+
+.pagetop {
+  display: flex;
+  text-align: center;
+  /* border: 2px solid red; */
+  font-size: 30px;
+  justify-content: center;
+}
+
+.heading {
+  font-family: monospace;
+  color: #aaa;
+  font-family: "Corinthia", cursive;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  border-radius: 5rem;
+  text-transform: capitalize;
+  gap: 20px;
+}
+
+.btn {
+  border: none;
+  /* min-width: 6rem; */
+  padding: 1.5rem 3rem;
+  background-color: rgb(255, 255, 255);
+
+  cursor: pointer;
+  margin: 0;
+  font-size: 17px;
+  box-shadow: inset 0px 0px 0px -15px rebeccapurple;
+  transition: all 300ms ease-out;
+  text-transform: capitalize;
+  border-radius: 20px;
+  outline: auto;
+}
+
+.btn:hover,
+.btn:focus {
+  color: rebeccapurple;
+  box-shadow: inset 0px -20px 0px -15px rebeccapurple;
+}
